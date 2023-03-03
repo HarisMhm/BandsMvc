@@ -4,5 +4,7 @@
     {
         public int Id { get; set; }
 
+        public int NilsTestCommit { get; set; }
+
     }
 }
