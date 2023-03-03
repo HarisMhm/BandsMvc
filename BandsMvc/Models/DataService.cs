@@ -11,5 +11,16 @@
             new Band { Id = 27, Name = "Metallica", Description = "Metal"},
         };
 
+        public Band GetBandById(int id)
+        {
+            return bands
+                .FirstOrDefault(i => i.Id == id);
+        }
+        public Band[] GetAll()
+        {
+            return bands
+                .ToArray();
+        }
+
     }
 }
