@@ -14,7 +14,8 @@
         <ul>
             @foreach (var item in Model)
             {
-                <li>@item.Name @item.Description</li>
+                string link = $"/details/{item.Id}";
+                <li><a href=@link>@item.Name</a></li>
             }
         </ul>
     </div>

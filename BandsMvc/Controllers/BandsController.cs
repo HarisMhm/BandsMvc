@@ -14,6 +14,13 @@ namespace BandsMvc.Controllers
             Band[] bands = dataService.GetAll();
             return View(bands);
         }
+
+        [HttpGet("details/{id}")]
+        public IActionResult Details(int id)
+        {
+            Band band = dataService.GetBandById(id);
+            return View();
+        }
     }
 }
 
