@@ -1,14 +1,16 @@
 ﻿@using BandsMvc.Models;
-@model Band[]
+@model Band
 
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
 </head>
 <body>
-    <h3>Specifikt band</h3>
+    <h3>@Model.Name</h3>
+    <p>@Model.Description</p>
 </body>
 </html>
 
